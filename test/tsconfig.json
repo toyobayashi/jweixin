@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": ".",
+    "module": "None",
+    "target": "ES5",
+    "lib": [
+      "ES2015",
+      "DOM"
+    ]
+  },
+  "files": [
+    "./index.ts"
+  ]
+}

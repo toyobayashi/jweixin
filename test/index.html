@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wx</title>
+</head>
+<body>
+  <div>
+    <p><button id="updateAppMessageShareData">updateAppMessageShareData</button></p>
+    <p><button id="updateTimelineShareData">updateTimelineShareData</button></p>
+    <p><button id="startRecord">startRecord</button></p>
+    <p><button id="stopRecord">stopRecord</button></p>
+    <p><button id="onVoiceRecordEnd">onVoiceRecordEnd</button></p>
+    <p><button id="chooseImage">chooseImage</button></p>
+    <p><button id="previewImage">previewImage</button></p>
+    <p><button id="getNetworkType">getNetworkType</button></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/Tencent/vConsole@v3.3.4/dist/vconsole.min.js"></script>
+  <script>
+    if (!/wechatdevtools/.test(navigator.userAgent)) {
+      new VConsole();
+    }
+  </script>
+  <script src="wx.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
