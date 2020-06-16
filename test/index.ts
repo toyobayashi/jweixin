@@ -45,7 +45,13 @@
     'stopRecord',
     'onVoiceRecordEnd',
     'previewImage',
-    'getLocalImgData'
+    'getLocalImgData',
+    'checkJsApi',
+    'openLocation',
+    'getLocation',
+    'scanQRCode',
+    'showOptionMenu',
+    'openBusinessView'
   ]
 
   await wxSign(apiList)
@@ -147,6 +153,42 @@
       }
     })
   }, false)
+  document.getElementById('openLocation')!.addEventListener('click', function () {
+    wx.openLocation({
+      latitude: 23.12908,
+      longitude: 113.26436,
+      success (res) {
+        console.log(res)
+      },
+      fail (err) {
+        console.log(err.errMsg)
+      }
+    })
+  }, false)
+  document.getElementById('getLocation')!.addEventListener('click', function () {
+    wx.getLocation({
+      success (res) {
+        console.log(res)
+      },
+      fail (err) {
+        console.log(err.errMsg)
+      }
+    })
+  }, false)
+
+  wx.miniProgram.getEnv((r) => {
+    console.log(r)
+  })
+
+  wx.openBusinessView({
+    businessType: '',
+    success (res) {
+      console.log(res)
+    },
+    fail (err) {
+      console.log(err.errMsg)
+    }
+  })
 })().catch(err => {
   console.error(err)
 })
