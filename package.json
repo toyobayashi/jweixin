@@ -1,6 +1,6 @@
 {
   "name": "@tybys/jweixin",
-  "version": "0.0.0-dev",
+  "version": "1.6.0",
   "description": "Weixin JS SDK UMD with typescript typings",
   "main": "./dist/jweixin.js",
   "typings": "./typings/jweixin.module.d.ts",
