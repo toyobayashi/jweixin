@@ -26,6 +26,10 @@
     "type": "git",
     "url": "git+https://github.com/toyobayashi/jweixin.git"
   },
+  "bugs": {
+    "url": "https://github.com/toyobayashi/jweixin/issues"
+  },
+  "homepage": "https://github.com/toyobayashi/jweixin#readme",
   "author": "toyobayashi",
   "license": "MIT",
   "devDependencies": {
