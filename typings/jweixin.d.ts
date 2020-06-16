@@ -1,17 +1,4 @@
-declare interface WXInvokeOptions {
-  name?: string;
-  arg?: { [key: string]: any };
-  [key: string]: any;
-}
-
-declare interface WXBridgeResponse {
-  err_code?: any;
-  err_desc?: any;
-  err_detail?: any;
-  errMsg?: string;
-  err_msg?: string;
-  [key: string]: any;
-}
+/// <reference path="bridge.d.ts" />
 
 declare namespace wx {
   export type Method =
@@ -549,10 +536,3 @@ declare namespace wx {
 }
 
 declare const jWeixin: typeof wx;
-
-declare namespace WeixinJSBridge {
-  export function call (): never;
-  export function invoke (message: string, options: WXInvokeOptions, callback: (res: WXBridgeResponse) => void): void;
-  export function log (message: any): void;
-  export function on (event?: string, listener?: (res: WXBridgeResponse) => void): void;
-}
