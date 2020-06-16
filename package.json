@@ -5,9 +5,11 @@
   "main": "./dist/jweixin.js",
   "typings": "./typings/jweixin.module.d.ts",
   "scripts": {
+    "serve": "node ./test/server/index.js",
     "tsc": "tsc -p ./test/tsconfig.json",
     "webpack": "node ./test/webpack/build.js",
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "all": "npm run build&&npm run tsc&&npm run webpack"
   },
   "keywords": [
     "weixin",
@@ -28,6 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "@koa/router": "^9.0.1",
+    "@types/node": "^12.12.47",
     "js-beautify": "^1.11.0",
     "koa": "^2.12.1",
     "koa-bodyparser": "^4.3.0",
@@ -35,6 +38,7 @@
     "koa2-cors": "^2.0.6",
     "node-fetch": "^2.6.0",
     "terser": "^4.7.0",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
     "webpack": "^4.43.0"
   }
