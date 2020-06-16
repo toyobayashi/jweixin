@@ -1,4 +1,4 @@
-/// <reference path="../typings/lib.wx.d.ts" />
+/// <reference path="../typings/jweixin.d.ts" />
 
 // console.log(wx);
 
