@@ -3,7 +3,7 @@
   "version": "0.0.0-dev",
   "description": "Weixin JS SDK with typescript typings",
   "main": "index.js",
-  "typings": "./typings/lib.wx.d.ts",
+  "typings": "./typings/jweixin.module.d.ts",
   "scripts": {
     "watch": "tsc -p ./test/tsconfig.json -w",
     "build": "tsc -p ./test/tsconfig.json"
@@ -25,6 +25,7 @@
     "koa2-cors": "^2.0.6",
     "node-fetch": "^2.6.0",
     "tsd": "^0.11.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0"
   }
 }
