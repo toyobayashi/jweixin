@@ -1,6 +1,6 @@
 # jweixin
 
-[微信 JSSDK](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html) UMD 版本，并且附带 TypeScript 声明文件，提供 API 智能补全即类型提示。
+[微信 JSSDK](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html) UMD 版本，并且附带 TypeScript 声明文件，提供 API 智能补全及类型提示。
 
 官方提供的版本不能在 Webpack 里使用，改成 UMD 可以方便模块化开发，但是仍然不支持运行在 Node.js 中，因为代码中使用了浏览器的 API。
 
