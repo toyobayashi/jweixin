@@ -7,7 +7,7 @@
   "scripts": {
     "tsc": "tsc -p ./test/tsconfig.json",
     "webpack": "node ./test/webpack/build.js",
-    "build": "./scripts/build.js"
+    "build": "node ./scripts/build.js"
   },
   "keywords": [
     "weixin",
