@@ -48,7 +48,7 @@ console.log(jWeixin);
 
 在纯 JS 项目中要获取 TS 类型智能提示，除了可以使用三斜线指令，也可以配置 `jsconfig.json`，类似 `tsconfig.json`，在 `include` 或 `files` 数组中加入声明文件，VS Code 能认识 `jsconfig.json`：
 
-``` json
+``` jsonc
 {
   "compilerOptions": {
     // ...
@@ -81,7 +81,7 @@ import wx from '@tybys/jweixin'
 
 全局引入 SDK，只需要配置 `tsconfig.json`：
 
-``` json
+``` jsonc
 {
   "compilerOptions": {
     // ...
@@ -95,9 +95,9 @@ import wx from '@tybys/jweixin'
 
 CommonJS:
 
-``` json
+``` jsonc
 {
-  "compilerOptions"： {
+  "compilerOptions": {
     // ...
     "moduleResolution": "node",
     "module": "CommonJS",
@@ -115,9 +115,9 @@ import wx from '@tybys/jweixin' // compilerOptions.esModuleInterop = true
 
 ES Module:
 
-``` json
+``` jsonc
 {
-  "compilerOptions"： {
+  "compilerOptions": {
     // ...
     "moduleResolution": "node",
     "module": "ESNext",
