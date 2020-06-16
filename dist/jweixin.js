@@ -1,20 +1,20 @@
 !function (e, n) {
-    if(typeof exports === 'object' && typeof module === 'object') {
-      var mod = n(e);
-      module.exports = mod;
-      module.exports['default'] = mod;
-    } else if(typeof define === 'function' && define.amd) {
-      define(function () {
-        return n(e);
-      });
-    } else if(typeof exports === 'object') {
-      exports['wx'] = n(e);
-    } else {
-      if (!e['jWeixin']) {
-        e['wx'] = e['jWeixin'] = n(e);
-      }
+  if(typeof exports === 'object' && typeof module === 'object') {
+    var mod = n(e);
+    module.exports = mod;
+    module.exports['default'] = mod;
+  } else if(typeof define === 'function' && define.amd) {
+    define(function () {
+      return n(e);
+    });
+  } else if(typeof exports === 'object') {
+    exports['wx'] = n(e);
+  } else {
+    if (!e['jWeixin']) {
+      e['wx'] = e['jWeixin'] = n(e);
     }
-  }(window, function(o, e) {
+  }
+}(window, function(o, e) {
   if (!o.jWeixin) {
     var n, c = {
         config: "preVerifyJSAPI",

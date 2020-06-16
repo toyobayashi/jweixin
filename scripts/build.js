@@ -17,22 +17,22 @@ async function main () {
   const re = /!\s*function\(\S{1},\s*\S{1}\)\s*\{(\r?\n)?(.+\r?\n)*\}\s*\(this,\s*/
 
   const umdWrapper = `!function (e, n) {
-    if(typeof exports === 'object' && typeof module === 'object') {
-      var mod = n(e);
-      module.exports = mod;
-      module.exports['default'] = mod;
-    } else if(typeof define === 'function' && define.amd) {
-      define(function () {
-        return n(e);
-      });
-    } else if(typeof exports === 'object') {
-      exports['wx'] = n(e);
-    } else {
-      if (!e['jWeixin']) {
-        e['wx'] = e['jWeixin'] = n(e);
-      }
+  if(typeof exports === 'object' && typeof module === 'object') {
+    var mod = n(e);
+    module.exports = mod;
+    module.exports['default'] = mod;
+  } else if(typeof define === 'function' && define.amd) {
+    define(function () {
+      return n(e);
+    });
+  } else if(typeof exports === 'object') {
+    exports['wx'] = n(e);
+  } else {
+    if (!e['jWeixin']) {
+      e['wx'] = e['jWeixin'] = n(e);
     }
-  }(window, `
+  }
+}(window, `
 
   const out = path.join(__dirname, '../dist')
   if (!fs.existsSync(out)) {
