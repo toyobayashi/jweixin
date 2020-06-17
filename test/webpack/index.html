@@ -11,10 +11,14 @@
   <script src="bundle.esm.js"></script>
   <script src="../../dist/jweixin.min.js"></script>
   <script>
-    console.log('window.wx')
-    console.log(window.wx)
-    console.log('window.jWeixin')
-    console.log(window.jWeixin)
+    console.log('window.wx');
+    console.log(window.wx);
+    console.log('window.jWeixin');
+    console.log(window.jWeixin);
+    console.log('wx === jWeixin: ', wx === jWeixin);
+    if (window.wx.default === window.wx) {
+      throw new Error('wx.default === wx');
+    }
   </script>
 </body>
 </html>

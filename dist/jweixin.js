@@ -1,4 +1,4 @@
-!function (e, n) {
+(function (e, n) {
   function w(e, n) {
     if (!e.location) e.location = { href: '', __polyfill: true };
     if (!e.navigator) e.navigator = { userAgent: '', platform: '', __polyfill: true };
@@ -24,10 +24,23 @@
     exports['wx'] = w(e, n);
   } else {
     if (!e['jWeixin']) {
-      e['wx'] = e['jWeixin'] = w(e, n);
+      e['wx'] = e['jWeixin'] = n(e);
     }
   }
-}(typeof globalThis !== "undefined" ? globalThis : (typeof window !== "undefined" ? window : (typeof self !== "undefined" ? self : this)), function(o, e) {
+})((function (_this) {
+  if (typeof globalThis !== "undefined") return globalThis;
+  if (typeof __webpack_modules__ === 'undefined') {
+    if (typeof global !== "undefined") return global;
+  }
+  if (typeof window !== "undefined") return window;
+  if (typeof self !== "undefined") return self;
+  var g;
+  g = (function () { return this; })();
+  try {
+    g = g || new Function("return this")();
+  } catch (_) {}
+  return g || _this || {};
+})(this), function(o, e) {
   if (!o.jWeixin) {
     var n, c = {
         config: "preVerifyJSAPI",
