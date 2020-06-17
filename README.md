@@ -2,7 +2,15 @@
 
 [微信 JSSDK](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html) UMD 版本，并且附带 TypeScript 声明文件，提供 API 智能补全及类型提示。
 
-官方提供的版本不能在 Webpack 里使用，改成 UMD 可以方便模块化开发，但是仍然不支持运行在 Node.js 中，因为代码中使用了浏览器的 API。
+官方提供的版本不能在 Webpack 里使用，改成 UMD 可以方便模块化开发。
+
+版本号说明：
+
+主版本号和次版本号跟随官方，修订号长度为 5 位，第一位固定是 1， 第二第三位是官方修订号，第四第五位是这个包的修订号，例如：
+
+如果官方 sdk 版本是 1.6.0，这个包对应的版本是 1.6.100xx
+
+如果官方 sdk 版本是 1.6.12，这个包对应的版本是 1.6.112xx
 
 ## 安装
 
@@ -23,7 +31,7 @@ $ npm run build
 
 输出在 `dist` 目录。
 
-如果构建失败，请考虑到文档中找他的地址下载一份 jweixin-x.x.x.js 放到 `src/jweixin.min.js` 后重新执行 `npm run build`。
+如果构建失败，请到文档中找他的地址下载一份 jweixin-x.x.x.js 手动放到 `src/jweixin.min.js` 后重新执行 `npm run build`。
 
 ## 用法
 

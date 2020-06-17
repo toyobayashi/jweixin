@@ -531,7 +531,11 @@ declare namespace wx {
     export interface postMessageOptions extends CommonOptions<postMessageResponse> {
       data?: any;
     }
-    export function getEnv (callback: (res: { miniprogram: boolean }) => void): void;
+
+    export interface GetEnvResponse {
+      miniprogram: boolean
+    }
+    export function getEnv (callback: (res: GetEnvResponse) => void): void;
   }
 }
 

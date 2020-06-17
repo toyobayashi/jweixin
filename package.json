@@ -1,6 +1,6 @@
 {
   "name": "@tybys/jweixin",
-  "version": "1.6.0",
+  "version": "1.6.10001",
   "description": "Weixin JS SDK UMD with typescript typings",
   "main": "./dist/jweixin.js",
   "typings": "./typings/jweixin.module.d.ts",
@@ -9,7 +9,8 @@
     "tsc": "tsc -p ./test/tsconfig.json",
     "webpack": "node ./test/webpack/build.js",
     "build": "node ./scripts/build.js",
-    "all": "npm run build&&npm run tsc&&npm run webpack"
+    "all": "npm run build&&npm run tsc&&npm run webpack",
+    "test": "npm run build&&npm run webpack&&mocha test/test.js"
   },
   "keywords": [
     "weixin",
@@ -34,12 +35,14 @@
   "license": "MIT",
   "devDependencies": {
     "@koa/router": "^9.0.1",
+    "@tybys/denostd": "^0.57.0",
     "@types/node": "^12.12.47",
     "js-beautify": "^1.11.0",
     "koa": "^2.12.1",
     "koa-bodyparser": "^4.3.0",
     "koa-static": "^5.0.0",
     "koa2-cors": "^2.0.6",
+    "mocha": "^8.0.1",
     "node-fetch": "^2.6.0",
     "terser": "^4.7.0",
     "ts-loader": "^7.0.5",
