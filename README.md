@@ -12,6 +12,12 @@
 
 如果官方 sdk 版本是 1.6.12，这个包对应的版本是 1.6.112xx
 
+## 截图
+
+![tip1.png](screenshot/tip1.png)
+![tip2.png](screenshot/tip2.png)
+![tip3.png](screenshot/tip3.png)
+
 ## 安装
 
 ### 用 NPM：
