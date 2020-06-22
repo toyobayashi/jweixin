@@ -1,6 +1,6 @@
 {
   "name": "@tybys/jweixin",
-  "version": "1.6.10002",
+  "version": "1.6.10003",
   "description": "Weixin JS SDK UMD with typescript typings",
   "main": "./dist/jweixin.js",
   "typings": "./typings/jweixin.module.d.ts",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "devDependencies": {
     "@koa/router": "^9.0.1",
-    "@tybys/denostd": "^0.57.0",
+    "@tybys/denostd": "^0.58.10000",
     "@types/node": "^12.12.47",
     "js-beautify": "^1.11.0",
     "koa": "^2.12.1",
