@@ -6,7 +6,7 @@
   if (typeof window !== "undefined") return window;
   if (typeof self !== "undefined") return self;
   var g;
-  g = (function () { return this; })();
+  g = (function () { return _this; })();
   try {
     g = g || new Function("return this")();
   } catch (_) {}
