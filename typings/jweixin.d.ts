@@ -47,6 +47,12 @@ declare namespace wx {
     'chooseCard' |
     'openCard';
   
+  export type OpenTag = 
+    'wx-open-launch-weapp' |
+    'wx-open-launch-app' |
+    'wx-open-subscribe' |
+    'wx-open-audio';
+  
   export type MenuItem =
     'menuItem:exposeArticle' |
     'menuItem:setFont' |
@@ -117,6 +123,10 @@ declare namespace wx {
      * 若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
      */
     debug?: boolean;
+    /**
+     * 需要使用的开放标签列表
+     */
+    openTagList?: OpenTag[];
   }
 
   export interface ConfigError extends CommonResponse {}
